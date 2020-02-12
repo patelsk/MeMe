@@ -65,7 +65,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         pickerControl.delegate = self
         pickerControl.sourceType = .photoLibrary
         present(pickerControl, animated: true, completion: nil)
-        print("My name jeff")
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
