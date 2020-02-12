@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeMeP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpf-9z-etA">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem title="Pick" id="2tw-MO-pB5">
+                                        <connections>
+                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="AG2-s3-NaD"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aNx-Mt-XqA">
+                                <rect key="frame" x="20" y="145" width="374" height="601"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIm-l8-Swf">
+                                <rect key="frame" x="20" y="218" width="374" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCT-ec-qf4">
+                                <rect key="frame" x="20" y="637" width="374" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1dl-uL-aa6"/>
+                            <constraint firstItem="UIm-l8-Swf" firstAttribute="leading" secondItem="aNx-Mt-XqA" secondAttribute="leading" id="2HT-Av-csJ"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3c6-aD-gCY"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="top" secondItem="aNx-Mt-XqA" secondAttribute="bottom" constant="67" id="3dI-Qh-GrB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aNx-Mt-XqA" secondAttribute="trailing" constant="20" id="3oj-28-Q6n"/>
+                            <constraint firstItem="aNx-Mt-XqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Aq-HL-rIK"/>
+                            <constraint firstItem="uCT-ec-qf4" firstAttribute="top" secondItem="aNx-Mt-XqA" secondAttribute="bottom" constant="-109" id="BJU-vh-5Cs"/>
+                            <constraint firstItem="UIm-l8-Swf" firstAttribute="trailing" secondItem="uCT-ec-qf4" secondAttribute="trailing" id="CVo-xK-xX4"/>
+                            <constraint firstItem="uCT-ec-qf4" firstAttribute="top" secondItem="UIm-l8-Swf" secondAttribute="bottom" constant="385" id="FJu-px-5PX"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="top" secondItem="aNx-Mt-XqA" secondAttribute="bottom" constant="67" id="FaX-Vv-mQ3"/>
+                            <constraint firstItem="uCT-ec-qf4" firstAttribute="top" secondItem="UIm-l8-Swf" secondAttribute="bottom" constant="385" id="SQ5-Ei-AJK"/>
+                            <constraint firstItem="UIm-l8-Swf" firstAttribute="trailing" secondItem="aNx-Mt-XqA" secondAttribute="trailing" id="Tbb-Ra-OOh"/>
+                            <constraint firstItem="UIm-l8-Swf" firstAttribute="leading" secondItem="uCT-ec-qf4" secondAttribute="leading" id="Yzh-8D-Scr"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aCe-ao-m9m"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aVG-C5-8DP"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b2F-ET-ZXq"/>
+                            <constraint firstItem="aNx-Mt-XqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ep1-Is-7Yg"/>
+                            <constraint firstItem="aNx-Mt-XqA" firstAttribute="top" secondItem="UIm-l8-Swf" secondAttribute="bottom" constant="-107" id="kMO-mm-a5N"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nDx-8w-bY3"/>
+                            <constraint firstItem="aNx-Mt-XqA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="qDu-xq-Kmx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aNx-Mt-XqA" secondAttribute="trailing" constant="20" id="tKE-gd-ZLd"/>
+                            <constraint firstItem="aNx-Mt-XqA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="tMq-Rj-tjZ"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="top" secondItem="aNx-Mt-XqA" secondAttribute="bottom" constant="67" id="yDP-Ee-og8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomText" destination="uCT-ec-qf4" id="PFb-c8-rI3"/>
+                        <outlet property="imagePickerView" destination="aNx-Mt-XqA" id="Yf0-0K-nzP"/>
+                        <outlet property="topText" destination="UIm-l8-Swf" id="C3h-ag-Caw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
