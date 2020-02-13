@@ -16,6 +16,12 @@ class TopTextDelegate: NSObject, UITextFieldDelegate
         textField.text = ""
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
+    {
+        textField.becomeFirstResponder()
+        return true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         textField.resignFirstResponder()
