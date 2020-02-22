@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dpf-9z-etA">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpf-9z-etA">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <barButtonItem title="Pick" id="2tw-MO-pB5">
                                         <connections>
@@ -26,32 +25,45 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNx-Mt-XqA">
-                                <rect key="frame" x="20" y="145" width="374" height="601"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8HW-f3-i87">
+                                <rect key="frame" x="24" y="168.5" width="366" height="569"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="569" id="MPt-VI-hZf"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UIm-l8-Swf">
-                                <rect key="frame" x="20" y="218" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ucw-mB-Qld">
+                                <rect key="frame" x="24" y="228" width="366" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uCT-ec-qf4">
-                                <rect key="frame" x="20" y="637" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2JC-Cg-bPR">
+                                <rect key="frame" x="24" y="630" width="366" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8HW-f3-i87" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5vT-cg-OLG"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72R-ho-Fod"/>
+                            <constraint firstItem="2JC-Cg-bPR" firstAttribute="trailing" secondItem="8HW-f3-i87" secondAttribute="trailing" id="O2z-ar-j3Y"/>
+                            <constraint firstItem="Ucw-mB-Qld" firstAttribute="bottom" secondItem="8HW-f3-i87" secondAttribute="top" constant="93.5" id="QYR-Bm-QuN"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RBw-ZW-Uyq"/>
+                            <constraint firstItem="8HW-f3-i87" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RUh-Rs-P0j"/>
+                            <constraint firstItem="Ucw-mB-Qld" firstAttribute="leading" secondItem="8HW-f3-i87" secondAttribute="leading" id="UXx-Jz-9qv"/>
+                            <constraint firstItem="2JC-Cg-bPR" firstAttribute="leading" secondItem="8HW-f3-i87" secondAttribute="leading" id="WIi-nD-95X"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="769" id="Zf7-7s-ACZ"/>
+                            <constraint firstItem="2JC-Cg-bPR" firstAttribute="top" secondItem="8HW-f3-i87" secondAttribute="bottom" constant="-107.5" id="dwS-ix-abd"/>
+                            <constraint firstItem="Ucw-mB-Qld" firstAttribute="trailing" secondItem="8HW-f3-i87" secondAttribute="trailing" id="lhk-c9-TgV"/>
+                            <constraint firstItem="Dpf-9z-etA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="p00-s8-cvi"/>
+                            <constraint firstItem="8HW-f3-i87" firstAttribute="centerX" secondItem="Dpf-9z-etA" secondAttribute="centerX" id="qbo-RL-RRh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="bottomText" destination="uCT-ec-qf4" id="PFb-c8-rI3"/>
-                        <outlet property="imagePickerView" destination="aNx-Mt-XqA" id="Yf0-0K-nzP"/>
-                        <outlet property="topText" destination="UIm-l8-Swf" id="C3h-ag-Caw"/>
+                        <outlet property="bottomText" destination="2JC-Cg-bPR" id="dFh-Aw-ceE"/>
+                        <outlet property="imagePickerView" destination="8HW-f3-i87" id="juk-yx-rz9"/>
+                        <outlet property="topText" destination="Ucw-mB-Qld" id="xiO-B3-S9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
